@@ -16,16 +16,16 @@ function sine () {
 function quad () {
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value, 4);
-
 }
-
-
-
 function square () {
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value, 2);
 }
 
+function inverse () {
+	var num = document.getElementById("n1");
+	num.value = 1/num.value;
+}
 
 </script>
 </head>
@@ -36,13 +36,14 @@ function square () {
  <p>
  <button onclick="cube()"> x^3 </button>
 
-
  <button onClick="sine ()">Sin x</button>
 
  <button onClick="quad ()">x^4</sup></button>
 
 
  <button onClick="square ()">x^2</sup></button>
+
+ <button onClick="inverse ()">1/x</button>
 
  </p>
 </body>
